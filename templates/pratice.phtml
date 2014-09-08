@@ -1,0 +1,88 @@
+          <section class="col-md-12">
+            <p><?php echo $view->text ?></p>
+          </section>
+          <section class="col-md-6">
+
+<?php
+echo '<h4>File nella directory pubblica</h4>', PHP_EOL;
+echo '<div class="source">', PHP_EOL;
+
+$num = count($view->files);
+$i = 0;
+echo '<code>/path/to/public/html</code><br>', PHP_EOL;
+echo '<pre>', PHP_EOL;
+while($i < $num) {
+    if ($i == ($num -1)) {
+        $prefix = '└ ';
+    } else {
+        $prefix = '├ ';
+    }
+    echo $prefix, $view->files[$i], PHP_EOL;
+    $i++;
+}
+echo '</pre>', PHP_EOL;
+echo '</div>', PHP_EOL;
+
+if ($view->lib) {
+
+$libs = scandir(APPLICATION_PATH . DIRECTORY_SEPARATOR . $view->lib);
+
+echo '<h4>File di libreria</h4>', PHP_EOL;
+echo '<div class="source">', PHP_EOL;
+
+$num = count($libs);
+$i = 0;
+echo '<code>/path/to/library</code><br>', PHP_EOL;
+echo '<pre>', PHP_EOL;
+while($i < $num) {
+    if ('.' == substr($libs[$i], 0, 1)) {
+        $i++;
+        continue;
+    }
+    if ($i == ($num -1)) {
+        $prefix = '└ ';
+    } else {
+        $prefix = '├ ';
+    }
+    echo $prefix, $libs[$i], PHP_EOL;
+    $i++;
+}
+echo '</pre>', PHP_EOL;
+
+echo '</div>';
+}
+
+echo '<h4>Codice</h4>', PHP_EOL;
+
+// public
+foreach($view->files as $file) {
+    $view->file = APPLICATION_PATH . DIRECTORY_SEPARATOR .
+                    \OopPhp\library\Config::getInstance()->paths['public'] . DIRECTORY_SEPARATOR .
+                    \OopPhp\library\Config::getInstance()->locations['pratice'] . DIRECTORY_SEPARATOR .
+                    $file;
+    echo '<div>File: <code>', basename($view->file), '</code></div>', PHP_EOL;
+    $view->partial('code');
+}
+
+// lib
+if ($view->lib) {
+    foreach($libs as $file) {
+        if ('.' == substr($file, 0, 1)) {
+            continue;
+        }
+        $view->file = APPLICATION_PATH . DIRECTORY_SEPARATOR .
+                        $view->lib . DIRECTORY_SEPARATOR . $file;
+        echo '<div>File: <code>', basename($view->file), '</code></div>', PHP_EOL;
+        $view->partial('code');
+    }
+}
+?>
+
+          </section>
+          <section class="col-md-6">
+            <div style="position: fixed; width: 32em">
+              <h4>Output dell'esecuzione</h4>
+              <iframe  style="width: 100%; height: 20em" class="example" src="<?php echo $view->url ?>"></iframe>
+            </div>
+          </section>
+

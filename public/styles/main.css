@@ -1,0 +1,110 @@
+body {
+    font-size: 160%;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Karla', sans-serif;
+}
+
+.page-header {
+    margin-top: 0;
+}
+.page-header img {
+    margin-top: 20px;
+}
+
+img {
+    margin-top: 0.5em;
+}
+
+pre {
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.jumbotron li {
+    line-height: 1.42857;
+}
+
+.example {
+    background-color: #ffe;
+    border: 1px dotted #333;
+}
+
+.partial {
+    position: fixed;
+    top: 0;
+    height: 55%; width: 100%;
+    overflow: auto;
+}
+
+ul.brands img {
+    max-width: 320px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+}
+
+nav {
+    margin-top: 3em;
+}
+
+footer {
+    margin: 1em 0;
+    padding: 1em 0;
+    border-top: 1px solid #eee;
+}
+
+h5 {
+    text-decoration: underline;
+}
+
+.source {
+    min-height: 12em;
+    max-height: 28em;
+    overflow: auto;
+    line-height: 100%;
+    padding: 2px;
+    background-color: #f6f6f6;
+    margin-bottom: 0.5em;
+}
+.source code {
+    background-color: inherit;
+}
+
+.pink {
+    background-color: #f99;
+}
+
+.green {
+    background-color: #9f9;
+}
+
+#codetoggle {
+    cursor: pointer;
+}
+
+#source > code {
+    display: none;
+    position: fixed;
+    height: 45%; width: 100%;
+    bottom: 0;
+    overflow: auto;
+    border-top: 1px #eee solid;
+}
+
+.filemap {
+    display: none;
+}
+.filemap > .panel-body {
+    font-family: monospace;
+}
+.fa.fa-plus-square-o,
+.fa.fa-minus-square-o {
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+.col-md-4 > img {
+    width: 100%;
+    height: auto;
+}

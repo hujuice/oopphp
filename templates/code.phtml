@@ -1,0 +1,10 @@
+            <div class="source">
+<?php
+// Avoid password
+$source = file_get_contents($view->file);
+$source = preg_replace('/pass\s*=\s*\".+\"/', 'pass = una_password_molto_robusta', $source);
+highlight_string($source);
+
+//highlight_file($view->file)
+?>
+            </div>

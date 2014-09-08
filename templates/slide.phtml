@@ -1,0 +1,9 @@
+          <section class="col-md-12">
+
+            <?php echo $view->content ?>
+<?php
+if ($view->manual && isset($view->manual['label']) && isset($view->manual['url'])) {
+            echo '            <p><span class="fa fa-file-text-o"></span> PHP Manual -&gt; <a href="', $view->manual['url'], '">', $view->manual['label'], '</a></p>', PHP_EOL;
+}
+?>
+          </section>

@@ -1,0 +1,53 @@
+          <section class="col-md-6">
+
+            <?php echo $view->content ?>
+<?php
+if ($view->manual && isset($view->manual['label']) && isset($view->manual['url'])) {
+            echo '            <p><span class="fa fa-file-text-o"></span> PHP Manual -&gt; <a href="', $view->manual['url'], '">', $view->manual['label'], '</a></p>', PHP_EOL;
+}
+?>
+          </section>
+
+          <section class="col-md-6">
+
+<?php
+if ($view->files) {
+    foreach($view->files as $file) {
+        /*
+        echo '            <div>File esterno: <code>', $file, '</code></div>', PHP_EOL;
+        echo '            <div class="source">';
+        highlight_file($view->filedir . DIRECTORY_SEPARATOR . $file);
+        echo '            </div>', PHP_EOL;
+        */
+        $view->file = $file;
+        echo '<div>File esterno: <code>', basename($view->file), '</code></div>', PHP_EOL;
+        $view->partial('code');
+    }
+}
+
+if ($view->example) {
+    echo '            <h5>Esempio</h5>', PHP_EOL;
+    /*
+    echo '            <div class="source">';
+    highlight_file($view->example);
+    echo '            </div>', PHP_EOL;
+    */
+    $view->file = $view->example;
+    $view->partial('code');
+
+    echo '            <h5>Output</h5>', PHP_EOL;
+    echo '            <iframe style="width: 100%; height: 4em" class="example" src="', $view->exampleurl, '"></iframe>', PHP_EOL;
+}
+
+if ($view->side) {
+    include $view->side;
+}
+
+if ($view->warning) {
+    echo '            <p class="alert alert-warning">', $view->warning, '</p>', PHP_EOL;
+}
+if ($view->success) {
+    echo '            <p class="alert alert-success">', $view->success, '</p>', PHP_EOL;
+}
+?>
+          </section>

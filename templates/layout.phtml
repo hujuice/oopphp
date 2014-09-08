@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corso avanzato di PHP, 9-11 setembre 2014<?php if ($view->title) echo ', ', $view->title; ?>">
+    <meta name="author" content="Sergio Vaccaro &lt;sergio.vaccaro@istat.it&gt;">
+<?php
+if ($view->prev) {
+    if (is_array($view->prev) && isset($view->prev['url'])) {
+        echo '    <link rel="prev" href="', $view->prev['url'], '">', PHP_EOL;
+    }
+}
+if ($view->next) {
+    if (is_array($view->next) && isset($view->next['url'])) {
+        echo '    <link rel="next" href="', $view->next['url'], '">', PHP_EOL;
+    }
+}
+?>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link href="/oopphp/styles/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <title><?php echo $view->title ?></title>
+  </head>
+
+  <body>
+    <div id="page">
+
+      <header class="container">
+        <div class="page-header">
+          <div class="row">
+            <h1 class="col-md-10 col-sm-8"><?php echo $view->title ?></h1>
+            <div class="col-md-2 col-sm-4 text-right"><img src="http://www.istat.it/img/istat.png" alt="Istat Logo"></div>
+          </div>
+          <div class="row">
+            <p class="col-md-10 col-sm-8"><?php echo $view->subtitle ?></p>
+          </div>
+        </div>
+      </header>
+
+      <article class="container">
+        <div class="row">
+
+<?php echo $view->content() ?>
+
+        </div><!--./row -->
+      </article>
+
+      <nav class="container">
+        <div class="row">
+          <div class="col-md-4">
+<?php
+if ($view->prev) {
+    if (is_array($view->prev) && isset($view->prev['url']) && isset($view->prev['label'])) {
+        echo '          <a href="', $view->prev['url'], '"><span class="fa fa-long-arrow-left"></span> ', $view->prev['label'], '</a>', PHP_EOL;
+    }
+}
+?>
+          </div>
+          <div class="col-md-4 text-center"><a href="/oopphp/"><span class="fa fa-long-arrow-up"></span> Indice</a></div>
+          <div class="col-md-4 text-right">
+<?php
+if ($view->next) {
+    if (is_array($view->next) && isset($view->next['url']) && isset($view->next['label'])) {
+        echo '          <a href="', $view->next['url'], '">', $view->next['label'], ' <span class="fa fa-long-arrow-right"></span></a>', PHP_EOL;
+    }
+}
+?>
+          </div>
+        </div>
+      </nav>
+
+      <footer class="container">
+        <div class="row">
+          <div class="col-md-8">
+            Corso avanzato di PHP, settembre 2014<br>
+            &copy; Istat 2014
+          </div>
+          <address class="col-md-3 col-md-offset-1 text-right">
+            <strong>Sergio Vaccaro</strong><br>
+            <a href="mailto:sergio.vaccaro@istat.it">sergio.vaccaro@istat.it</a>
+          </address>
+        </div>
+      </footer>
+    </div><!--./page -->
+
+    <!-- Placed at the end of the document so the pages load faster
+    ================================================== -->
+
+    <!-- JQuery -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- Custom code for this page -->
+    <script src="/oopphp/js/main.js"></script>
+  </body>
+</html>
