@@ -1,11 +1,12 @@
 oopphp
 ======
 
-Classroom course in italian about OOP in PHP language, sith source codes
-
+## En
+Classroom course in italian about OOP in PHP language, with source codes
 The course is readable at http://sergiovaccaro.it/oopphp
 
-Materiale del corso in aula di programmazione a oggetti in PHP
 
+## It
+Materiale del corso in aula di programmazione a oggetti in PHP
 Il corso è consultabile a http://sergiovaccaro.it/oopphp
 
