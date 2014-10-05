@@ -57,6 +57,10 @@ class Model
         if ($email && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new Exception('Invalid email address', 400);
         }
+        
+        $email || throw new Exception();
+        
+        $email || $email = 1;
 
         $this->_db->beginTransaction();
 
@@ -88,7 +92,10 @@ class Model
             $statement->bindValue(':password', $password, PDO::PARAM_STR);
             $statement->bindValue(':email', $email, PDO::PARAM_STR);
 
-            $statement->execute();
+            if (!$statement->execute()) {
+                //throw new Exception('fallimento!');
+                print_r($statement->errorInfo());
+            }
 
         $this->_db->commit();
     }

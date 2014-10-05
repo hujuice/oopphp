@@ -88,7 +88,7 @@ class Application
     public function run()
     {
         ob_start();
-
+        
         $front = Controller\Front::getInstance();
 
         $front->run();
