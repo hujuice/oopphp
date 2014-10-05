@@ -58,10 +58,6 @@ class Model
             throw new Exception('Invalid email address', 400);
         }
         
-        $email || throw new Exception();
-        
-        $email || $email = 1;
-
         $this->_db->beginTransaction();
 
             $sql = 'SELECT count(*) AS num_users FROM users';
@@ -79,8 +75,12 @@ class Model
             } else {
                 $ID = 1;
             }
-
-            $password = password_hash($password, PASSWORD_DEFAULT);
+            
+            if (version_compare(PHP_VERSION, '5.5.0') >= 0) {
+                $password = password_hash($password, PASSWORD_DEFAULT);
+            } else {
+                $password = crypt($password);
+            }
 
             $sql = 'INSERT INTO users
                     (ID, name, password, email)

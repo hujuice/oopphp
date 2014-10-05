@@ -129,6 +129,7 @@ return array(
           <li><a href="esercizi/form">Raccogliere i dati inseriti in un modulo</a></li>
           <li><a href="esercizi/exception">Dotare un\'applicazione di un exception handler</a></li>
           <li><a href="esercizi/singleton">Singleton: garantire che una classe abbia una sola istanza</a></li>
+          <li><a href="esercizi/database">Registrazione di un utente in database</a></li>
         </ul>
       </section>',
 );

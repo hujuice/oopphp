@@ -87,7 +87,7 @@ class ErrorManager
         $conf = Config::getInstance();
 
         if ($conf->main['firephp']) {
-        require 'FirePHP.class.php';
+	require_once 'FirePHP/lib/FirePHPCore/FirePHP.class.php';
             $this->_firephp = \FirePHP::getInstance(true);
         }
     }
