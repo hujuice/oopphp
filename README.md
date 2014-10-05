@@ -2,6 +2,7 @@ oopphp
 ======
 
 ## En
+<<<<<<< HEAD
 Classroom course in italian about OOP in PHP language, with source codes<br>
 The course is readable at http://sergiovaccaro.it/oopphp
 
