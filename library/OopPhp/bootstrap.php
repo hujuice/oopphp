@@ -23,48 +23,6 @@
  * @version     1.0.0
  */
 
-
-/*
-$include_path = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..');
-define('APPLICATION_PATH', realpath($include_path . DIRECTORY_SEPARATOR . '..'));
-set_include_path($include_path . PATH_SEPARATOR . get_include_path());
-
-define('APPLICATION_PATH', realpath(__DIR__ . '/../'));
-set_include_path(APPLICATION_PATH . PATH_SEPARATOR . get_include_path());
-
-define('APPLICATION_PATH', realpath(__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..'));
-set_include_path(realpath(__DIR__ . DIRECTORY_SEPARATOR . '..') . PATH_SEPARATOR . get_include_path());
-echo realpath(__DIR__ . DIRECTORY_SEPARATOR . '..');
-exit;
-*/
-
-// Autoloading
-// We need a custom function for this strange bug
-// See https://bugs.php.net/bug.php?id=49625
-/**
- * Function to authomatically load namespaced classes
- *
- * Simply takes the classname (with namespace) and find the corresponding
- * file.
- *
- * We need a custom function because a 'wontfix' bug
- * @see https://bugs.php.net/bug.php?id=49625
- * @param string $classname The name of the class to load, with namespace
- */
-/*
-function __autoload($classname)
-{
-    require_once(str_replace('\\', DIRECTORY_SEPARATOR, $classname . '.php'));
-}
-spl_autoload_register('__autoload');
-
-// Invoke the application with the given configuration file
-$app = new OopPhp\Application(realpath(__DIR__ . '/../../') . DIRECTORY_SEPARATOR . 'config.ini');
-
-// Go, go, go!
-$app->run();
-*/
-
 define('APPLICATION_PATH', realpath(__DIR__ .
                                     DIRECTORY_SEPARATOR .
                                     '..' .
