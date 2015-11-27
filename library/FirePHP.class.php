@@ -1,1 +1,0 @@
-../../firephp-core/lib/FirePHPCore/FirePHP.class.php
