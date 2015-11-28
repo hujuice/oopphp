@@ -40,10 +40,17 @@ class Model
      */
     public function __construct()
     {
-        $config = parse_ini_file('config.ini');
-        $dsn = 'mysql:dbname=' . $config['name'] . ';host=' . $config['host'];
+        $this->_db = new PDO(
+            'sqlite::memory:',
+            null,
+            null,
+            array(PDO::ATTR_PERSISTENT => true)
+        );
 
-        $this->_db = new PDO($dsn, $config['user'], $config['pass']);
+        // Create the table if not exist
+        $sql = 'CREATE TABLE IF NOT EXISTS users (ID INTEGER PRIMARY KEY, name, password, email)';
+        $statement = $this->_db->prepare($sql);
+        $statement->execute();
     }
 
     /**
@@ -57,7 +64,7 @@ class Model
         if ($email && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new Exception('Invalid email address', 400);
         }
-        
+
         $this->_db->beginTransaction();
 
             $sql = 'SELECT count(*) AS num_users FROM users';
@@ -72,10 +79,11 @@ class Model
                 $statement->execute();
                 $result = $statement->fetch(PDO::FETCH_NUM);
                 $ID = $result[0] + 1;
+
             } else {
                 $ID = 1;
             }
-            
+
             if (version_compare(PHP_VERSION, '5.5.0') >= 0) {
                 $password = password_hash($password, PASSWORD_DEFAULT);
             } else {
