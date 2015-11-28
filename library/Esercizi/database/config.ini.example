@@ -1,5 +1,0 @@
-; parametri di connessione al database
-host = "localhost"
-name = "oopphp"
-user = "oopphp"
-pass = "my_very_strong_password"

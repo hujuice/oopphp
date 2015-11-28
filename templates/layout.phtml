@@ -21,7 +21,7 @@ if ($view->next) {
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="<?php echo \OopPhp\Controller\Front::getInstance()->baseUrl(); ?>/styles/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -100,6 +100,6 @@ if ($view->next) {
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
     <!-- Custom code for this page -->
-    <script src="js/main.js"></script>
+    <script src="<?php echo \OopPhp\Controller\Front::getInstance()->baseUrl(); ?>/js/main.js"></script>
   </body>
 </html>
