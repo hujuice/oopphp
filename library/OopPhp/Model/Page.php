@@ -50,8 +50,7 @@ class Page
     {
         $pagesdir = \OopPhp\library\Config::getInstance()->paths['pages'];
 
-        if ($this->_page = include(APPLICATION_PATH . DIRECTORY_SEPARATOR . $pagesdir . DIRECTORY_SEPARATOR . $name . '.php'))
-        {
+        if ($this->_page = include(APPLICATION_PATH . DIRECTORY_SEPARATOR . $pagesdir . DIRECTORY_SEPARATOR . $name . '.php')) {
             // Do nothing
         } else {
             throw new \Exception('Unable to find page data.', 404);

@@ -110,7 +110,7 @@ class Front
 
         if (strpos($request, $this->_baseUrl) === 0) {
 
-            $request = explode('/', trim(substr($request, strlen($this->_baseUrl)), '/'));
+            $request = explode('/', trim(substr($request, strlen($this->baseUrl())), '/'));
 
             if (!$request[0]) {
                 $this->_request->action = 'page';
@@ -148,7 +148,11 @@ class Front
      */
     public function baseUrl()
     {
-        return $this->_baseUrl;
+        if ('/' == $this->_baseUrl) {
+            return '';
+        } else {
+            return $this->_baseUrl;
+        }
     }
 
     /**
