@@ -19,7 +19,7 @@ return array(
 durante la creazione dell\'oggetto vengono inviati al costruttore i parametri richiesti. L\'istanza
 della classe viene normalmente assegnata ad una variabile.</p>
             <p>A partire da questo momento è possibile accedere ai metodi e alle proprietà
-<strong>pubblici</strong> dell\'oggetto attraverso il costrutto <code>-></code>.</p>
+<strong>pubblici</strong> dell\'oggetto attraverso il costrutto <code>-&gt;</code>.</p>
             <p>Metodi e proprietà non pubblici, invece, non sono accessibili alla variabile e hanno
 un\'utilità squisitamente interna.</p>
             <p>Ai metodi e alle proprietà di una classe, internamente, si accede tramite la

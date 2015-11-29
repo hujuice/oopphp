@@ -1,17 +1,20 @@
 <?php
 /**
- * La connesione ad un database MySQL
+ * La connesione ad un database SQLite
  */
-$dsn = 'mysql:dbname=testdb;host=127.0.0.1';
-$user = 'dbuser';
-$password = 'dbpass';
+$dsn = 'sqlite::memory:';
+$user = null;
+$pass = null;
+
 
 /*
 $username è una variabile dal contenuto non affidabile
+Ad esempio, è una variabile inserita dall'utente
 */
 
 try {
-    $dbh = new PDO($dsn, $user, $password);
+    $dbh = new PDO($dsn, $user, $pass);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Segnaposto posizionale
     $sql = 'SELECT * FROM users WHERE username = ?';
@@ -24,5 +27,6 @@ try {
     $statement2->bindValue(':username', $username, PDO::PARAM_STR);
 
 } catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
+    // Non si deme MAI rivelare ai malintenzionati la natura di un errore
+    echo 'Failed: ' . $e->getMessage();
 }

@@ -1,13 +1,16 @@
 <?php
 /**
- * La connesione ad un database MySQL
+ * La connessione ad un database SQLite
  */
-$dsn = 'mysql:dbname=testdb;host=127.0.0.1';
-$user = 'dbuser';
-$password = 'dbpass';
+$dsn = 'sqlite::memory:';
+$user = null;
+$pass = null;
 
 try {
-    $dbh = new PDO($dsn, $user, $password);
+    $dbh = new PDO($dsn, $user, $pass);
+    echo 'Connected!';
 } catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
+    // MAI dare dettagli in produzione: non è sicuro
+    //echo 'Connection failed: ' . $e->getMessage();
+    echo 'Connection failed...';
 }

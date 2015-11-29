@@ -15,7 +15,7 @@ return array(
                         'url'   => 'http://it2.php.net/manual/en/pdostatement.bindvalue.php',
                         'label' => 'PDOStatement::bindValue()',
                     ),
-    'content'   => '<p>Per assegnare i valori ai parametri si può usare il metodo <code>->bindValue()</code>
+    'content'   => '<p>Per assegnare i valori ai parametri si può usare il metodo <code>-&gt;bindValue()</code>
 della classe <code>PDOStatement</code>.</p>
             <p>Il primo argomento del metodo individua il parametro da manipolare.</p>
             <p>Se abbiamo usato parametri posizionali <code>?</code>, il primo parametro
@@ -29,6 +29,7 @@ della classe <code>PDOStatement</code>.</p>
 da quello del PHP. È un tipo di dato che serve a PDOStatement per scrivere gli eventuali
 apici e poco altro. Il tipo di dato viene indicato attraverso le <a href="http://it2.php.net/manual/en/pdo.constants.php">costanti
 interne<code>PARAM_*</code> della classe <code>PDO</code></a>.</p>
+            <p class="alert alert-warning">Se si vuole, si può ottenere un\'eccezione in caso di fallimento di  <code>-&gt;prepare()</code>. Per ottenerla bisogna impostare un apposito <a href="http://be2.php.net/manual/en/pdo.error-handling.php" class="alert-link">attributo</a> all\'oggetto PDO.</p>
             <p class="alert alert-danger">Sembra piuttosto noioso, anzi lo è.
 La tentazione di concatenare direttamente le variabili nella query è piuttosto forte.<br>
 Bene, <u>è proprio così che si verifica l\'SQL injection</u> <span class="fa fa-smile-o"></span></p>',
