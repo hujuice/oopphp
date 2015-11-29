@@ -89,7 +89,7 @@ return array(
               <li><a href="database_pdo">PDO</a>
                 <ul>
                   <li><a href="pdo_pdo">La classe PDO</a></li>
-                  <li><a href="pro_query">La scrittura delle query e la classe PDOStatement</a></li>
+                  <li><a href="pdo_query">La scrittura delle query e la classe PDOStatement</a></li>
                   <li><a href="pdo_params">Assegnare i valori ai parametri</a></li>
                   <li><a href="pdo_execute">Eseguire una query</a></li>
                   <li><a href="pdo_results">Raccogliere i risultati</a></li>

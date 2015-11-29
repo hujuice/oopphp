@@ -24,7 +24,7 @@ della maggior parte dei lavori al contorno, come le transazioni.</p>
 un\'<strong>eccezione</strong>.</p>
             <p class="alert alert-danger">Gli oggetti della classe <code>PDO</code>, da soli,
 possono anche eseguire le query, ma non è consigliabile, soprattutto in ambito web, perché predurerebbe il rischio di <em>SQL injection</em>.</p>
-            <p class="alert alert-info">In questi esempi viene usato <a href="https://www.sqlite.org/" class="alert-link">SQLite</a>, per ovvie ragioni di economia e portabilità. In particolare, viene usato un database residente in memoria.<br>
+            <p class="alert alert-info">In questi esempi viene usato <a href="https://www.sqlite.org/" class="alert-link">SQLite</a>, per ovvie ragioni di economia e portabilità. In particolare, viene usato un database residente in memoria, la cui vita è limitata a quella dell\'esecuzione del programma.<br>
             Grazie all\'astrazione, però, tutti gli esempi funzionerebbero nello stesso modo anche nelle altre piattaforme, come Oracle, MySQL e le altre.</p>',
     'example'   => basename(__FILE__),
 );
