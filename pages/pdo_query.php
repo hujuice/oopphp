@@ -21,13 +21,14 @@ successivamente.</p>
             <p>I segnaposto possono essere o degli anonimi <code>?</code>, che verranno poi
 manipolati in base alla loro posizione nella query, oppure degli espliciti <code>:placeholder</code>,
 che verranno manipolati in base al nome.</p>
-            <p>Una volta scritta la query in questo modo, la si affida al metodo <code>->prepare()</code>
+            <p>Una volta scritta la query in questo modo, la si affida al metodo <code>-&gt;prepare()</code>
 dell\'oggetto <code>PDO</code>, che restituisce un altro oggetto, questa volta della classe <code>PDOStatement</code>,
 che si incaricherà di tutta la fase di esecuzione. <code>PDOStatement</code> inserirà i valori nelle query
 secondo le istruzioni, eseguirà le query e tratterà l\'eventuale output.</p>
             <p>In quella sede, viene anche indicato sommariamente il tipo di paramentro, attraverso le costanti
 interne della classe <code>PDO</code>.</p>
             <p>Nel manuale del PHP è disponibile <a href="http://it2.php.net/manual/en/pdo.constants.php">l\'elenco
-dei tipi trattati da <code>PDO</code></a>.</p>',
+dei tipi trattati da <code>PDO</code></a>.</p>
+            <p class="alert alert-warning">Se la preparazione di una query fallisce, per default <code>-&gt;prepare()</code> restituisce <code>false</code>.</p>',
     'example'   => basename(__FILE__),
 );

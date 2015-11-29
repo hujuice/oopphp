@@ -22,7 +22,7 @@ o per dei metodi che eseguono algoritmi di validità piuttosto generale. Altre v
 ci permette di allestire dei "trucchetti" (pattern) che si rivelano molto utili.</p>
             <p>Un metodo o una proprietà possono essere resi disponibili senza bisogno dell\'istanza della
 classe attraverso la parola chiave <code>static</code>.</p>
-            <p>Ad essi si accede con l\'operatore <code>::</code> e NON con <code>-></code>.</p>
+            <p>Ad essi si accede con l\'operatore <code>::</code> e NON con <code>-&gt;</code>.</p>
             <p>Esternamente si accede utilizzando direttamente il nome della classe.</p>
             <p>Internamente si accede utilizzando la parola chiave <code>self</code>.</p>
             <p class="alert alert-success">Poiché le classi non hanno uno <em>scope</em> e sono sempre disponibili,

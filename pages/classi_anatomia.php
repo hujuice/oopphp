@@ -28,7 +28,7 @@ hanno effetti diversi per ciascun oggetto.</p>
 visto che oltre a dei valori, contengono anche delle funzioni.</p>
             <p>Per creare un oggetto di una classe, chiamato anche <em>istanza</em> della classe,
 si usa il costrutto <code>new</code>, seguito dal nome della classe.</p>
-            <p>Metodi e proprietà sono accessibili scrivendo il nome della variabile seguito da <code>-></code>
+            <p>Metodi e proprietà sono accessibili scrivendo il nome della variabile seguito da <code>-&gt;</code>
 e poi il nome del metodo o della proprietà.</p>
             <p>All\'interno della classe, la variabile <code>$this</code> indica l\'istanza della classe,
 cioè l\'oggetto di quella classe, ed è la "maniglia" attraverso la quale si può accedere a metodi e proprietà

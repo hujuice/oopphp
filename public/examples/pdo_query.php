@@ -1,25 +1,26 @@
 <?php
 /**
- * La connesione ad un database MySQL
+ * La connesione ad un database SQLite
  */
-$dsn = 'mysql:dbname=testdb;host=127.0.0.1';
-$user = 'dbuser';
-$password = 'dbpass';
+$dsn = 'sqlite::memory:';
+$user = null;
+$pass = null;
 
 /*
 $username è una variabile dal contenuto non affidabile
+Ad esempio, è una variabile inserita dall'utente
 */
 
 try {
-    $dbh = new PDO($dsn, $user, $password);
+    $dbh = new PDO($dsn, $user, $pass);
 
     // Segnaposto posizionale
     $sql = 'SELECT * FROM users WHERE username = ?';
-    $statement1 = $dbh->prepare($sql); // Istanza di PDOStatement
+    $statement = $dbh->prepare($sql); // Istanza di PDOStatement
 
     // Segnaposto con nome
     $sql = 'SELECT * FROM users WHERE username = :username';
-    $statement2 = $dbh->prepare($sql); // Istanza di PDOStatement
+    $statement = $dbh->prepare($sql); // Istanza di PDOStatement
 } catch (PDOException $e) {
-    echo 'Connection failed: ' . $e->getMessage();
+    echo 'Failed!';
 }
