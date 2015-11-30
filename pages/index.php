@@ -79,7 +79,7 @@ return array(
         </ul>
       </section>
       <section>
-        <h2>Il mondo reale: i database</h2>
+        <h2>I database</h2>
         <ul>
           <li><a href="database">Il mondo reale: i database</a>
             <ul>
