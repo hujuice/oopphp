@@ -9,7 +9,7 @@ return array(
                     ),
     'next'      => array(
                         'url'   => 'shared_repos',
-                        'label' => 'I repository condivisi',
+                        'label' => 'I repository pubblici',
                     ),
     'content'   => '<p>I framework sono complesse infrastrutture, spesso poderose, che organizzano e modellano
 intere applicazioni, oltre a fornire attrezzature per numerosissimi scopi.</p>

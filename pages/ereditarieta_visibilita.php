@@ -9,7 +9,7 @@ return array(
                     ),
     'next'      => array(
                         'url'   => 'ereditarieta_abstract',
-                        'label' => 'Ereditarietà - Metodi e classi astratte',
+                        'label' => 'Ereditarietà - Metodi e classi astratti',
                     ),
     'manual'    => array(
                         'url'   => 'http://it2.php.net/manual/en/language.oop5.visibility.php',

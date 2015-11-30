@@ -5,7 +5,7 @@ return array(
     'subtitle'  => 'Creazione e uso di una classe di oggetti',
     'prev'      => array(
                         'url'   => 'oop_progettazione',
-                        'label' => 'OOP - La progettazione',
+                        'label' => 'OOP - L\'importanza della progettazione',
                     ),
     'next'      => array(
                         'url'   => 'classi_anatomia',

@@ -5,7 +5,7 @@ return array(
     'subtitle'  => 'Imporre che una classe abbia una sola istanza',
     'prev'      => array(
                         'url'   => 'pattern',
-                        'label' => 'Pattern di programmazione',
+                        'label' => 'Pattern di progettazione',
                     ),
     'next'      => array(
                         'url'   => 'pattern_factory',

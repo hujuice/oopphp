@@ -1,7 +1,7 @@
 <?php
 // Parametri per generare la pagina
 return array(
-    'title'     => 'Pattern di programmazione',
+    'title'     => 'Pattern di progettazione',
     'subtitle'  => 'Soluzioni',
     'prev'      => array(
                         'url'   => 'namespace_autoloading',
@@ -9,7 +9,7 @@ return array(
                     ),
     'next'      => array(
                         'url'   => 'pattern_singleton',
-                        'label' => 'Pattern - singleton',
+                        'label' => 'Pattern - Singleton',
                     ),
     'content'   => '<div class="jumbotron">
               <h1>Design pattern</h1>

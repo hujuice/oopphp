@@ -1,7 +1,7 @@
 <?php
 // Parametri per generare la pagina
 return array(
-    'title'     => 'I repository condivisi',
+    'title'     => 'I repository pubblici',
     'subtitle'  => 'Come viaggiare con Trip Advisor',
     'prev'      => array(
                         'url'   => 'framework',

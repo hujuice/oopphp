@@ -33,7 +33,7 @@ return array(
               <li><a href="ereditarieta_estendere">Estendere una classe</a></li>
               <li><a href="ereditarieta_sintassi">Sintassi e utilizzo</a></li>
               <li><a href="ereditarieta_visibilita">Visibilità</a></li>
-              <li><a href="ereditarieta_abstract">Classi astratte</a></li>
+              <li><a href="ereditarieta_abstract">Metodi e classi astratti</a></li>
               <li><a href="ereditarieta_final">Metodi e proprietà "finali"</a></li>
               <li><a href="ereditarieta_interfacce">Interfacce</a></li>
             </ul>
@@ -71,9 +71,9 @@ return array(
         <ul>
           <li><a href="pattern">Pattern di progettazione</a>
             <ul>
-              <li><a href="pattern_singleton">Il pattern singleton</a></li>
-              <li><a href="pattern_factory">Il pattern factory</a></li>
-              <li><a href="pattern_mvc">Il pattern MVC</a></li>
+              <li><a href="pattern_singleton">Singleton</a></li>
+              <li><a href="pattern_factory">Factory</a></li>
+              <li><a href="pattern_mvc">MVC</a></li>
             </ul>
           </li>
         </ul>
