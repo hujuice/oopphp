@@ -5,7 +5,7 @@ return array(
     'subtitle'  => 'L\'universo dei dati',
     'prev'      => array(
                         'url'   => 'pattern_mvc',
-                        'label' => 'Pattern MVC',
+                        'label' => 'Pattern - MVC',
                     ),
     'next'      => array(
                         'url'   => 'database_prodotti',

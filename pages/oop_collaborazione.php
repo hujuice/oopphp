@@ -9,7 +9,7 @@ return array(
                     ),
     'next'      => array(
                         'url'   => 'oop_file',
-                        'label' => 'OOP - File',
+                        'label' => 'OOP - Organizzazione dei file',
                     ),
     'manual'    => array(
                         'url'   => 'http://it2.php.net/manual/en/oop5.intro.php',

@@ -1,7 +1,7 @@
 <?php
 // Parametri per generare la pagina
 return array(
-    'title'     => 'Ereditarietà - Metodi e classi astratte',
+    'title'     => 'Ereditarietà - Metodi e classi astratti',
     'subtitle'  => 'Mezze classi, mezzi metodi',
     'prev'      => array(
                         'url'   => 'ereditarieta_visibilita',

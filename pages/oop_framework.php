@@ -5,7 +5,7 @@ return array(
     'subtitle'  => 'Parti separate',
     'prev'      => array(
                         'url'   => 'oop_file',
-                        'label' => 'OOP - File',
+                        'label' => 'OOP - Organizzazione dei file',
                     ),
     'next'      => array(
                         'url'   => 'oop_progettazione',

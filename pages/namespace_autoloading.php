@@ -9,7 +9,7 @@ return array(
                     ),
     'next'      => array(
                         'url'   => 'pattern',
-                        'label' => 'Pattern di programmazione',
+                        'label' => 'Pattern di progettazione',
                     ),
     'manual'    => array(
                         'url'   => 'http://it2.php.net/manual/en/language.namespaces.php',

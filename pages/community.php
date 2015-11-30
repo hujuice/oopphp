@@ -5,7 +5,7 @@ return array(
     'subtitle'  => 'Turisti "fai da te"',
     'prev'      => array(
                         'url'   => 'shared_repos',
-                        'label' => 'Repository condivisi',
+                        'label' => 'Repository pubblici',
                     ),
     'next'      => array(
                         'url'   => 'not_found',
