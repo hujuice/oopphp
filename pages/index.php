@@ -81,11 +81,11 @@ return array(
       <section>
         <h2>Il mondo reale: i database</h2>
         <ul>
-          <li><a href="database">Finalmente i database!</a>
+          <li><a href="database">Il mondo reale: i database</a>
             <ul>
               <li><a href="database_prodotti">Estensioni specifiche per prodotto</a></li>
               <li><a href="database_astrazione">Astrazione</a></li>
-              <li><a href="database_sqlinjection">Sicurezza: SQL injection</a></li>
+              <li><a href="database_sqlinjection">SQL injection</a></li>
               <li><a href="database_pdo">PDO</a>
                 <ul>
                   <li><a href="pdo_pdo">La classe PDO</a></li>
@@ -113,7 +113,7 @@ return array(
           <li><a href="risorse">Framework, librerie, risorse in rete</a>
             <ul>
               <li><a href="framework">I framework</a></li>
-              <li><a href="shared_repos">I repository condivisi</a></li>
+              <li><a href="shared_repos">I repository pubblici</a></li>
               <li><a href="community">La comunità degli sviluppatori</a></li>
             </ul>
           </li>
