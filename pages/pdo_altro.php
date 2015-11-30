@@ -1,7 +1,7 @@
 <?php
 // Parametri per generare la pagina
 return array(
-    'title'     => 'PDO - Altro',
+    'title'     => 'PDO - Altre opportunità',
     'subtitle'  => 'Uno strumento potente e dalle numerose opportunità',
     'prev'      => array(
                         'url'   => 'pdo_results',

@@ -1,7 +1,7 @@
 <?php
 // Parametri per generare la pagina
 return array(
-    'title'     => 'Pattern MVC',
+    'title'     => 'Pattern - MVC',
     'subtitle'  => 'Organizzare un\'applicazione',
     'prev'      => array(
                         'url'   => 'pattern_factory',
@@ -9,7 +9,7 @@ return array(
                     ),
     'next'      => array(
                         'url'   => 'database',
-                        'label' => 'I database',
+                        'label' => 'Il mondo reale: i database',
                     ),
     'content'   => '<p>Il <strong><em>pattern MVC</em></strong> non è un\'elegante trovata stilistica
 da adottare nel codice, ma un approccio concettuale all\'organizzazione di un\'applicazione.</p>

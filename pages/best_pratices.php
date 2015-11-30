@@ -5,7 +5,7 @@ return array(
     'subtitle'  => 'Far tesoro dell\'esperienza (altrui)',
     'prev'      => array(
                         'url'   => 'pdo_altro',
-                        'label' => 'PDO - Altro',
+                        'label' => 'PDO - Altre opportunità',
                     ),
     'next'      => array(
                         'url'   => 'bp_configurazione',

@@ -9,7 +9,7 @@ return array(
                     ),
     'next'      => array(
                         'url'   => 'eccezioni_struttura',
-                        'label' => 'Eccezioni - Struttura',
+                        'label' => 'Eccezioni - Struttura di un\'eccezione',
                     ),
     'manual'    => array(
                         'url'   => 'http://it2.php.net/manual/en/language.exceptions.php',

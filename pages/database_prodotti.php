@@ -5,7 +5,7 @@ return array(
     'subtitle'  => 'RDBMS e non solo: scenari diversi',
     'prev'      => array(
                         'url'   => 'database',
-                        'label' => 'Database',
+                        'label' => 'Il mondo reale: i database',
                     ),
     'next'      => array(
                         'url'   => 'database_astrazione',

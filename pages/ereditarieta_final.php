@@ -5,7 +5,7 @@ return array(
     'subtitle'  => 'Impedire l\'estensione',
     'prev'      => array(
                         'url'   => 'ereditarieta_abstract',
-                        'label' => 'Ereditarietà - Metodi e classi astratte',
+                        'label' => 'Ereditarietà - Metodi e classi astratti',
                     ),
     'next'      => array(
                         'url'   => 'ereditarieta_interfacce',
