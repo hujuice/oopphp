@@ -16,7 +16,7 @@ return array(
                         'label' => 'PDO',
                     ),
     'content'   => '<p><code>PDO</code> è una classe di oggetti che rappresenta le connesioni a un database.</p>
-            <p>Gli oggetti della classe <code>PDO</code> si creano fornendo al costruttore il <em>DSN</em>,
+            <p>Gli oggetti della classe <code>PDO</code> si creano fornendo al costruttore il <a href="https://it.wikipedia.org/wiki/Database_Source_Name"><em>DSN</em></a>,
 le credenziali di accesso ed eventualmente alcuni parametri specifici di prodotto.</p>
             <p>Gestisce le query - ma non è lo strumento ideale per eseguirle - e si incarica
 della maggior parte dei lavori al contorno, come le transazioni.</p>
