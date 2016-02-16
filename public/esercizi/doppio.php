@@ -1,6 +1,8 @@
 <?php
 // Esercizio: un numero che raddoppia sempre
 header('Content-Type: text/plain');
+ini_set('display_errors', true); // MAI in produzione!!!
+ini_set('html_errors', 0);
 
 /**
  * Questa classe rappresenta un numero
