@@ -1,6 +1,7 @@
 <?php
 // Esercizio: un numero che si dimezza sempre
 header('Content-Type: text/plain');
+ini_set('display_errors', true); // MAI in produzione!!!
 ini_set('html_errors', 0);
 
 /**

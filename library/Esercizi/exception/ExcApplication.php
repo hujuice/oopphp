@@ -18,7 +18,6 @@ class ExcApplication extends NewApplication
         $message = 'Siamo spiacenti, ma c\'è stato un grosso problema e l\'applicazione non può proseguire.' . PHP_EOL;
 
         header('HTTP/1.1 500 Internal Server Error');
-        header('Content-Type: text/plain');
         echo $message;
 
         echo $e->getMessage(); // <- Contrario ai criteri di sicurezza!
@@ -29,6 +28,10 @@ class ExcApplication extends NewApplication
      */
     public function __construct()
     {
+        header('Content-Type: text/plain');
+        ini_set('display_errors', true); // MAI in produzione!!!
+        ini_set('html_errors', 0);
+
         set_exception_handler(array($this, 'exceptionManager'));
 
         parent::__construct();

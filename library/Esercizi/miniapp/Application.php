@@ -10,6 +10,7 @@ class Application
     public function __construct()
     {
         header('Content-Type: text/plain');
+        ini_set('display_errors', true); // MAI in produzione!!!
         ini_set('html_errors', 0);
 
         require_once('Moka.php');

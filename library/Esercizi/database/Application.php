@@ -45,6 +45,8 @@ class Application
      */
     public function __construct()
     {
+        ini_set('display_errors', true); // MAI in produzione!!!
+
         // Aggiunge un gestore di eccezioni
         set_exception_handler(array($this, 'exceptionManager'));
 
